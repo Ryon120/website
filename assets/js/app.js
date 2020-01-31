@@ -1,14 +1,15 @@
 // ハンバーガーメニューのコード
-// toggle()とはHTML要素を簡単に表示・日表示することができるメソッド
+// toggle()とはHTML要素を簡単に表示・非表示することができるメソッド
 function toggleNav() {
   var body = document.body;
   var hamburger = document.getElementById('js-hamburger');
   var blackBg = document.getElementById('js-black-bg');
-  
+
+  // ハンバーガークリックでナビをオープン
   hamburger.addEventListener('click', function() {
     body.classList.toggle('nav-open');
   });
-  //クリック時に 
+  //黒い部分クリックでナビをクローズ
   blackBg.addEventListener('click', function() {
     body.classList.remove('nav-open');
   });
@@ -31,10 +32,13 @@ $(function() {
   $next.fadeIn($fade_speed).addClass("active");
   },$interval);
 });
+// .lengthの後の?が謎　これ消したら崩れた
+// なぜそんな重要なのか不明
+
 
 
 // マウスオーバー時にアイコンを変えます
-// ※左側しか反応しないのなんで？
+// ※左側しか反応しないのなんで？←隣の文字のpaddingが上に乗ってる
 // attr()はHTML要素の属性を取得したり設定することができるメソッド
 // mouseoverで特定の要素内にカーソルが入る時に切り替え
 // mouseoutでカーソルが出た時に切り替え←mouseleaveでも可

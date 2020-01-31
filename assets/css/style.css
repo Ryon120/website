@@ -30,7 +30,7 @@
     height: 100vh;
     padding-top: 40px;
     background-color: #c0c0d6; opacity:0.61;;
-    transition: all .6s;
+    transition: all .6s; /* 6秒で変わる */
     z-index: 200 ;
     overflow-y: auto; /* メニューが多くなったらスクロールできるように */
   }
@@ -114,7 +114,7 @@
   }
 
 
-    
+/* slideのcssコード */
 #slide {
     width: 1568px;
     height: 757px;
@@ -131,6 +131,7 @@
     position:relative;
     z-index:10;
 }
+
 
 .article-img {
     width: 100% ;
