@@ -1,0 +1,346 @@
+
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 72px;
+    background-color:maroon;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+    font-weight: bold;
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    
+  }
+
+  .header-name {
+    align-items: center;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+  .global-nav {
+    position: fixed;
+    right: -320px; /* これで隠れる */
+    top: 0;
+    width: 300px; /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 40px;
+    background-color: #c0c0d6; opacity:0.61;;
+    transition: all .6s;
+    z-index: 200 ;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px; 
+    cursor: pointer;
+    z-index: 100;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
+  .global-nav__item a:hover {
+    background-color: #eee;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 1px;
+    background-color: #111;
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 14px;
+  }
+  .hamburger__line--2 {
+    top: 20px;
+  }
+  .hamburger__line--3 {
+    top: 26px;
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+
+
+    
+#slide {
+    width: 1568px;
+    height: 757px;
+    margin:30px auto;
+    position:relative;
+    display:block;
+    z-index:10;
+} 
+
+#slide img {
+    left:0;
+    top:30;
+    display:block;
+    position:relative;
+    z-index:10;
+}
+
+.article-img {
+    width: 100% ;
+}
+    
+.sub-title {
+    font-size: 35px;
+    font-family: serif;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.sub-title-explain {
+    display: flex;
+    text-align: center;
+    font-family: serif;
+    justify-content: center;
+}
+
+.Ryo {
+    background-color: rgba(238, 238, 238, 0.952);
+    display: flex;
+    justify-content: center;
+    font-family:serif ;
+    padding: 30px;
+    
+}
+
+.me {
+    border-radius: 50%;
+    width: 420%;
+}
+
+.container1 {
+    display: flex;
+}
+
+/* ↓ここからマウスオーバー時アイコン変更のコード */
+#wrap {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+
+.one {
+  background-image: url('../img/ryo300.jpg');
+  border-radius: 50%;
+}
+ 
+.two {      
+  background-image: url('../img/ryo-icon300.jpg');
+  border-radius: 50%;
+}
+/* ↑ここまでマウスオーバー時アイコン変更のコード */
+
+.item1 {
+    width: 5%;
+    padding-left: 300px; 
+}
+
+.item2 {
+    width: 65%;
+    padding-left: 300px;
+}
+
+.prof {
+    margin-right: 20px;
+}
+
+.article {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+}
+.activity-img{
+    width: 30%;
+}
+/* activity-imgにシャドーをつける 
+.shadow {
+  -moz-box-shadow: 0 0 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px #333;
+  */
+    
+.activity {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: serif;
+    }
+
+.activity-title {
+     font-weight: bold;
+     font-size: 25px;
+}    
+
+
+.activity-title2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 50px ;
+}    
+
+.activity-explain {
+    font-size: 15px;
+}
+
+.activity-explain2 {
+    font-size: 15px;
+    margin-left: 50px ;
+}
+
+.otoiawase {
+    font-family: serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: maroon;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+.btn-square:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+  }
+
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: maroon;
+    color: #fff;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* form */
+
+.lead-form{
+    text-align: center;
+    font-size:20px;
+}
+form{
+    width:460px;
+    margin:0 auto;
+}
+.item{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.label{
+    float: left;
+    margin-right: 20px;
+    width:135px;
+    border-left: solid 3px #e0505d;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  .inputs{
+    float: left;
+    width:300px;
+  }
+  input[type="text"],input[type="email"]{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
+  }
+  textarea{
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
+  }
+  .btn-area{
+    text-align: center;
+  }
+  input[type="submit"]{
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
+  input[type="reset"]{
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+  }
